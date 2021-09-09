@@ -1,0 +1,15 @@
+
+.bar-container{
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+ height: 35.5rem;
+}
+
+.bar{
+    width: 1rem;
+    background-color: rgba(0, 132, 255, 0.527);
+    margin: 5px;
+    border-radius: 5px;
+}
