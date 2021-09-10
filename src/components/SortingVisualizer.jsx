@@ -15,10 +15,10 @@ const SECONDARY_COLOR = " rgb(49, 226, 13)";
 let SortingVisualizer = () => {
   let [Array, setArray] = useState([]);
   let [AlreadySorted,setSorted]=useState(false);
-
   let ResetArray = () => {
+    console.log(window.innerWidth);
     let temp = [];
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < (window.innerWidth<768?20:50); i++) {
       temp.push(Math.floor(Math.random() * 105) + 5);
     }
     setSorted(false);
